@@ -1,0 +1,42 @@
+diff -ur libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48.orig/src/MeshData.cpp libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48/src/MeshData.cpp
+--- libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48.orig/src/MeshData.cpp	2017-05-01 22:26:43.000000000 +0200
++++ libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48/src/MeshData.cpp	2017-05-14 14:54:16.549302144 +0200
+@@ -1,5 +1,5 @@
+ #include "MeshData.h"
+-#include "../pugixml/src/pugixml.hpp"
++#include <pugixml.hpp>
+ #include <iostream>
+ 
+ using namespace Savitar;
+diff -ur libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48.orig/src/Scene.cpp libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48/src/Scene.cpp
+--- libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48.orig/src/Scene.cpp	2017-05-01 22:26:43.000000000 +0200
++++ libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48/src/Scene.cpp	2017-05-14 14:54:16.549302144 +0200
+@@ -1,5 +1,5 @@
+ #include "Scene.h"
+-#include "../pugixml/src/pugixml.hpp"
++#include <pugixml.hpp>
+ #include <iostream>
+ #include <string>
+ using namespace Savitar;
+diff -ur libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48.orig/src/SceneNode.cpp libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48/src/SceneNode.cpp
+--- libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48.orig/src/SceneNode.cpp	2017-05-01 22:26:43.000000000 +0200
++++ libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48/src/SceneNode.cpp	2017-05-14 14:54:16.549302144 +0200
+@@ -1,5 +1,5 @@
+ #include "SceneNode.h"
+-#include "../pugixml/src/pugixml.hpp"
++#include <pugixml.hpp>
+ #include <iostream>
+ using namespace Savitar;
+ 
+diff -ur libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48.orig/src/ThreeMFParser.h libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48/src/ThreeMFParser.h
+--- libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48.orig/src/ThreeMFParser.h	2017-05-01 22:26:43.000000000 +0200
++++ libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48/src/ThreeMFParser.h	2017-05-14 14:54:16.549302144 +0200
+@@ -21,7 +21,7 @@
+ 
+ #include "SavitarExport.h"
+ #include "SceneNode.h"
+-#include "../pugixml/src/pugixml.hpp"
++#include <pugixml.hpp>
+ 
+ #include <string>
+ namespace Savitar

@@ -1,0 +1,25 @@
+From da7aea99012720c316881a10cb41ebbb9526d84b Mon Sep 17 00:00:00 2001
+From: rpm-build <rpm-build>
+Date: Wed, 3 May 2017 17:02:08 +0200
+Subject: [PATCH] Don't build pugixml
+
+---
+ CMakeLists.txt | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 040830c..a8f700d 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -8,8 +8,6 @@ option(BUILD_PYTHON "Build " ON)
+ option(BUILD_STATIC "Build as a static library" OFF)
+ 
+ 
+-add_subdirectory(pugixml)
+-
+ if(BUILD_PYTHON)
+     set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
+     find_package(SIP REQUIRED)
+-- 
+2.11.0
+
