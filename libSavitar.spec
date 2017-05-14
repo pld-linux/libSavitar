@@ -8,7 +8,7 @@ Version:	0
 Release:	0.1.%{relstring}
 License:	AGPLv3+
 Group:		Libraries
-Source0:	https://github.com/Ultimaker/libSavitar/archive/%{commit}/%{name}-%{version}-%{shortcommit}.tar.gz
+Source0:	https://github.com/Ultimaker/libSavitar/archive/%{commit}/%{name}-%{version}-%{commit}.tar.gz
 # Source0-md5:	c9da107ed1e4f954b080258b7811c85e
 Patch0:		no-pugixml.patch
 Patch1:		lib-suffix.patch
