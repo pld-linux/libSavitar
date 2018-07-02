@@ -2,10 +2,11 @@
 %define shortcommit %(c=%{commit}; echo ${c:0:7})
 %define datestamp 20170501
 %define relstring %{datestamp}git%{shortcommit}
+%define	rel	2
 Summary:	C++ implementation of 3mf loading with SIP Python bindings
 Name:		libSavitar
 Version:	0
-Release:	0.1.%{relstring}
+Release:	0.%{rel}.%{relstring}
 License:	AGPLv3+
 Group:		Libraries
 Source0:	https://github.com/Ultimaker/libSavitar/archive/%{commit}/%{name}-%{version}-%{commit}.tar.gz
