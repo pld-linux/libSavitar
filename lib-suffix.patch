@@ -12,19 +12,3 @@
      endif()
      include_directories(python/ src/ ${SIP_INCLUDE_DIR} ${PYTHON_INCLUDE_DIR})
  endif()
-@@ -56,7 +56,7 @@
- set(SAVITAR_VERSION 0.1.0)
- set(SAVITAR_SOVERSION 0)
- 
--set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
-+set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib${LIB_SUFFIX}")
- 
- if(BUILD_STATIC)
-     add_library(Savitar STATIC ${savitar_SRCS})
-@@ -116,4 +116,4 @@
-     ${CMAKE_BINARY_DIR}/SavitarConfig.cmake
-     ${CMAKE_BINARY_DIR}/SavitarConfigVersion.cmake
-     DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/Savitar
--)
-\ No newline at end of file
-+)

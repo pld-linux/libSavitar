@@ -1,19 +1,15 @@
-%define commit 1ad7ddb202ec36f6b486b1f70279329ec0b8cc48
-%define shortcommit %(c=%{commit}; echo ${c:0:7})
-%define datestamp 20170501
-%define relstring %{datestamp}git%{shortcommit}
-%define	rel	2
 Summary:	C++ implementation of 3mf loading with SIP Python bindings
 Name:		libSavitar
-Version:	0
-Release:	0.%{rel}.%{relstring}
+Version:	2.7.0
+Release:	1
 License:	AGPLv3+
 Group:		Libraries
-Source0:	https://github.com/Ultimaker/libSavitar/archive/%{commit}/%{name}-%{version}-%{commit}.tar.gz
-# Source0-md5:	c9da107ed1e4f954b080258b7811c85e
+Source0:	https://github.com/Ultimaker/libSavitar/archive/%{version}/%{name}-%{version}.tar.gz
+# Source0-md5:	584cd4f3dacdcdbe69edcd42b83a4c6c
 Patch0:		no-pugixml.patch
-Patch1:		lib-suffix.patch
-Patch2:		system-pugixml.patch
+Patch1:		system-pugixml.patch
+Patch2:		lib-suffix.patch
+Patch3:		PyQt5-sip.patch
 URL:		https://github.com/Ultimaker/libSavitar
 BuildRequires:	cmake
 BuildRequires:	libstdc++-devel
@@ -52,10 +48,11 @@ bindings. 3mf is a 3D printing file format.
 The Python bindings.
 
 %prep
-%setup -q -n %{name}-%{commit}
+%setup -q
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 %build
 mkdir build
