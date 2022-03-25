@@ -1,7 +1,7 @@
 Summary:	C++ implementation of 3mf loading with SIP Python bindings
 Name:		libSavitar
 Version:	2.7.0
-Release:	4
+Release:	5
 License:	AGPLv3+
 Group:		Libraries
 Source0:	https://github.com/Ultimaker/libSavitar/archive/%{version}/%{name}-%{version}.tar.gz
