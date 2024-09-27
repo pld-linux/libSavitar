@@ -1,28 +1,31 @@
-diff -ur libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48.orig/src/MeshData.cpp libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48/src/MeshData.cpp
---- libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48.orig/src/MeshData.cpp	2017-05-01 22:26:43.000000000 +0200
-+++ libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48/src/MeshData.cpp	2017-05-14 14:54:16.549302144 +0200
-@@ -1,5 +1,5 @@
+--- libSavitar-4.13.2/src/MeshData.cpp.orig	2024-09-27 05:56:42.358265141 +0200
++++ libSavitar-4.13.2/src/MeshData.cpp	2024-09-27 17:48:09.030344921 +0200
+@@ -17,7 +17,7 @@
+  */
+ 
  #include "MeshData.h"
 -#include "../pugixml/src/pugixml.hpp"
 +#include <pugixml.hpp>
+ #include <cstring>
  #include <iostream>
+ #include <stdexcept> //For std::runtime_error.
+--- libSavitar-4.13.2/src/Scene.cpp.orig	2024-09-27 05:56:42.361598457 +0200
++++ libSavitar-4.13.2/src/Scene.cpp	2024-09-27 17:48:48.246799134 +0200
+@@ -17,7 +17,7 @@
+  */
  
- using namespace Savitar;
-diff -ur libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48.orig/src/Scene.cpp libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48/src/Scene.cpp
---- libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48.orig/src/Scene.cpp	2017-05-01 22:26:43.000000000 +0200
-+++ libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48/src/Scene.cpp	2017-05-14 14:54:16.549302144 +0200
-@@ -1,5 +1,5 @@
  #include "Scene.h"
 -#include "../pugixml/src/pugixml.hpp"
 +#include <pugixml.hpp>
  #include <iostream>
  #include <string>
  using namespace Savitar;
-diff -ur libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48.orig/src/SceneNode.cpp libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48/src/SceneNode.cpp
---- libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48.orig/src/SceneNode.cpp	2017-05-01 22:26:43.000000000 +0200
-+++ libSavitar-1ad7ddb202ec36f6b486b1f70279329ec0b8cc48/src/SceneNode.cpp	2017-05-14 14:54:16.549302144 +0200
-@@ -1,5 +1,5 @@
+--- libSavitar-4.13.2/src/SceneNode.cpp.orig	2024-09-27 05:56:42.361598457 +0200
++++ libSavitar-4.13.2/src/SceneNode.cpp	2024-09-27 17:49:14.206658498 +0200
+@@ -18,7 +18,7 @@
+ 
  #include "SceneNode.h"
+ #include "Namespace.h"
 -#include "../pugixml/src/pugixml.hpp"
 +#include <pugixml.hpp>
  #include <iostream>
