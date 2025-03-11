@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Implementacja C++ ładowania 3mf w wiązaniami Pythona SIP
 Name:		libSavitar
 # keep in sync with CuraEngine, cura, libArgus, python3-Uranium
 Version:	4.13.2
-Release:	
+Release:	2
 License:	AGPL v3+
 Group:		Libraries
 #Source0Download: https://github.com/Ultimaker/libSavitar/tags
@@ -71,8 +71,8 @@ Ten pakiet zawiera wiązania Pythona.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%patch -P 0 -p1
+%patch -P 1 -p1
 
 %build
 mkdir build
